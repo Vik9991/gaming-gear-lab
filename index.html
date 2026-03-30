@@ -7,69 +7,72 @@
 
 <style>
 body { font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#e5e7eb; }
-header { background:#020617; padding:25px; text-align:center; }
-header h1 { margin:0; color:#38bdf8; }
+header { background:#020617; padding:20px; text-align:center; }
+header h1 { margin:0; color:#38bdf8; font-size:24px; }
 
-nav { background:#020617; padding:12px; text-align:center; border-top:1px solid #1e293b; }
-nav a { color:#e5e7eb; margin:0 15px; text-decoration:none; font-weight:bold; }
+nav { background:#020617; padding:10px; text-align:center; border-top:1px solid #1e293b; }
+nav a { color:#e5e7eb; margin:0 10px; text-decoration:none; font-weight:bold; font-size:14px; }
 nav a:hover { color:#38bdf8; }
 
-.container { padding:20px; max-width:1100px; margin:auto; }
+.container { padding:15px; max-width:1100px; margin:auto; }
 
-.category-title { margin-top:30px; color:#38bdf8; }
+.category-title { margin-top:25px; color:#38bdf8; font-size:20px; }
 
 .product {
   background:#020617;
   border-radius:12px;
-  padding:15px;
+  padding:12px;
   margin:15px 0;
   box-shadow:0 2px 10px rgba(0,0,0,0.5);
   display:flex;
-  gap:15px;
+  gap:12px;
   align-items:center;
 }
 
-.product img { max-width:140px; border-radius:8px; }
-
+.product img { width:120px; border-radius:8px; }
 .product-content { flex:1; }
 
 .tag {
   display:inline-block;
   background:#38bdf8;
   color:#020617;
-  padding:4px 8px;
+  padding:3px 6px;
   border-radius:6px;
-  font-size:12px;
-  margin-bottom:5px;
+  font-size:11px;
 }
 
-.rating { color:#facc15; margin:5px 0; }
+.rating { color:#facc15; font-size:14px; }
 
 .btn {
   display:inline-block;
-  padding:10px 15px;
+  padding:8px 12px;
   background:#38bdf8;
   color:#020617;
   text-decoration:none;
   border-radius:6px;
   font-weight:bold;
+  font-size:14px;
 }
 
-.btn:hover { background:#0ea5e9; }
+/* MOBILE OPTIMIZATION */
+@media (max-width:768px) {
+  .product {
+    flex-direction:column;
+    text-align:center;
+  }
 
-table { width:100%; border-collapse:collapse; margin-top:20px; }
-th, td { border:1px solid #1e293b; padding:10px; text-align:center; }
-th { background:#020617; }
+  .product img {
+    width:100%;
+    max-width:220px;
+  }
 
-footer {
-  text-align:center;
-  padding:20px;
-  background:#020617;
-  margin-top:30px;
-  border-top:1px solid #1e293b;
+  nav a {
+    display:inline-block;
+    margin:5px;
+  }
 }
 
-/* 🔥 Sticky CTA */
+/* STICKY CTA */
 .sticky-cta {
   position: fixed;
   bottom: 0;
@@ -81,7 +84,6 @@ footer {
   font-weight: bold;
   z-index: 999;
 }
-.sticky-cta a { color:#020617; text-decoration:none; }
 </style>
 </head>
 
@@ -94,160 +96,93 @@ footer {
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Best Gaming Keyboards</a>
-<a href="#">Best Gaming Mouse</a>
-<a href="#">Best Gaming Headsets</a>
+<a href="#">Keyboards</a>
+<a href="#">Mice</a>
+<a href="#">Headsets</a>
 </nav>
 
 <div class="container">
 
-<!-- 🔥 SEO + TRUST INTRO -->
-<p>
-Looking for the best gaming gear in 2026? We’ve tested and reviewed the top keyboards, mice, and headsets to help you choose the best setup for performance, comfort, and value.
-</p>
+<p>Looking for the best gaming gear in 2026? We’ve tested top keyboards, mice, and headsets to help you choose the best setup.</p>
 
-<p style="font-size:13px; color:#94a3b8;">
-We may earn a commission when you buy through our links at no extra cost to you.
-</p>
-
-<h2 class="category-title">🏆 Top Picks Comparison</h2>
-
-<table>
-<tr>
-<th>Product</th>
-<th>Best For</th>
-<th>Rating</th>
-<th>Link</th>
-</tr>
-
-<tr>
-<td>Razer BlackWidow V4</td>
-<td>RGB & Performance</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td><a class="btn" href="https://amzn.to/4bUVBbF" target="_blank">🔥 View Deal</a></td>
-</tr>
-
-<tr>
-<td>Logitech G Pro X Superlight</td>
-<td>FPS Gaming</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td><a class="btn" href="https://amzn.to/411xWRS" target="_blank">🔥 View Deal</a></td>
-</tr>
-
-<tr>
-<td>SteelSeries Arctis Nova Pro</td>
-<td>Premium Audio</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td><a class="btn" href="https://amzn.to/4v07hmc" target="_blank">🔥 View Deal</a></td>
-</tr>
-
-</table>
-
-<!-- 🏆 EDITOR PICK -->
-<div style="background:#022c22; padding:15px; border-radius:10px; margin-top:20px;">
-<h3>🏆 Editor’s Choice</h3>
-<p><strong>SteelSeries Apex Pro TKL</strong> – Best overall for speed, customization, and esports performance.</p>
-<a class="btn" href="https://amzn.to/4uXH8En" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
-</div>
-
-<h2 class="category-title">🎮 Best Gaming Keyboards</h2>
+<h2 class="category-title">🎮 Keyboards</h2>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/71o3H7XwZ-L._AC_SL1500_.jpg">
+<img src="images/razer-blackwidow-v4.jpg" alt="Razer BlackWidow V4">
 <div class="product-content">
-<div class="tag">🏆 Best Overall Keyboard</div>
+<div class="tag">🏆 Best Overall</div>
 <h3>Razer BlackWidow V4</h3>
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Top-tier RGB, fast switches, and premium build quality.</p>
-<a class="btn" href="https://amzn.to/4bUVBbF" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>Top-tier RGB and premium build.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/71v7U6V2d-L._AC_SL1500_.jpg">
+<img src="images/apex-pro-tkl.jpg" alt="SteelSeries Apex Pro TKL">
 <div class="product-content">
-<div class="tag">⚡ Best for Competitive Gaming</div>
+<div class="tag">⚡ Competitive</div>
 <h3>SteelSeries Apex Pro TKL</h3>
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Adjustable actuation for elite-level precision.</p>
-<a class="btn" href="https://amzn.to/4uXH8En" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>Adjustable actuation for speed.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
-<h2 class="category-title">🖱️ Best Gaming Mice</h2>
+<h2 class="category-title">🖱️ Mice</h2>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg">
+<img src="images/gpro-superlight.jpg" alt="Logitech G Pro X Superlight">
 <div class="product-content">
-<div class="tag">🎯 Best for FPS</div>
+<div class="tag">🎯 FPS</div>
 <h3>Logitech G Pro X Superlight</h3>
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Ultra-lightweight with top-tier tracking performance.</p>
-<a class="btn" href="https://amzn.to/411xWRS" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>Ultra-lightweight precision.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/61c5oXzG7BL._AC_SL1500_.jpg">
+<img src="images/deathadder-v3.jpg" alt="Razer DeathAdder V3 Pro">
 <div class="product-content">
-<div class="tag">🖐️ Best Ergonomic Mouse</div>
+<div class="tag">🖐️ Ergonomic</div>
 <h3>Razer DeathAdder V3 Pro</h3>
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Comfort + performance for long sessions.</p>
-<a class="btn" href="https://amzn.to/4tlUau1" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>Comfort for long sessions.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
-<h2 class="category-title">🎧 Best Gaming Headsets</h2>
+<h2 class="category-title">🎧 Headsets</h2>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/71yVq9c2oXL._AC_SL1500_.jpg">
+<img src="images/arctis-nova-pro.jpg" alt="SteelSeries Arctis Nova Pro">
 <div class="product-content">
-<div class="tag">🔊 Best Premium Audio</div>
+<div class="tag">🔊 Premium</div>
 <h3>SteelSeries Arctis Nova Pro</h3>
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>High-end sound with ANC and comfort.</p>
-<a class="btn" href="https://amzn.to/4v07hmc" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>High-end audio quality.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
 <div class="product">
-<img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg">
+<img src="images/hyperx-cloud2.jpg" alt="HyperX Cloud II">
 <div class="product-content">
-<div class="tag">💰 Best Budget Headset</div>
+<div class="tag">💰 Budget</div>
 <h3>HyperX Cloud II</h3>
 <div class="rating">⭐⭐⭐⭐☆</div>
-<p>Great value with solid surround sound.</p>
-<a class="btn" href="https://amzn.to/3PvPu6f" target="_blank">Check Price</a>
-<p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
+<p>Great value headset.</p>
+<a class="btn" href="#">Check Price</a>
 </div>
 </div>
 
-<!-- TRUST SECTION -->
-<h2 class="category-title">✅ Why Trust Gaming Gear Lab?</h2>
-<ul>
-<li>✔️ Real product research & comparisons</li>
-<li>✔️ Focus on performance, not hype</li>
-<li>✔️ Constantly updated recommendations</li>
-</ul>
-
 </div>
 
-<footer>
-<p>© 2026 Gaming Gear Lab</p>
-<p>Disclaimer: As an Amazon Associate, I earn from qualifying purchases.</p>
-</footer>
-
-<!-- 🔥 STICKY CTA -->
 <div class="sticky-cta">
-🔥 <a href="https://amzn.to/4bUVBbF" target="_blank">Check Today’s Best Deal</a>
+🔥 Check Today’s Best Deal
 </div>
 
 </body>
 </html>
+
