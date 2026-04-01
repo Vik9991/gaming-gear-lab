@@ -1,119 +1,183 @@
-<!-- KEYBOARDS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Gaming Gear Lab</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .category-title {
+      margin-top: 30px;
+      color: #38bdf8;
+    }
+
+    .product {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      background: #020617;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .product img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product-content {
+      flex: 1;
+    }
+
+    .tag {
+      background: #38bdf8;
+      color: #020617;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    .rating {
+      color: #facc15;
+      margin: 5px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- 🔥 NAVBAR GOES HERE -->
+<!-- NAVBAR -->
 <nav>
-  <a href="index.html">Home</a> |
-  <a href="valorant-mouse.html">Valorant Mouse</a> |
-  <a href="keyboard-fps.html">FPS Keyboards</a> |
+  <a href="index.html">Home</a>
+  <a href="valorant-mouse.html">Valorant Mouse</a>
+  <a href="keyboard-fps.html">FPS Keyboards</a>
   <a href="gaming-headset-pc.html">Headsets</a>
 </nav>
 
+<!-- KEYBOARDS -->
 <h2 class="category-title">🎮 Best Gaming Keyboards for FPS (2026)</h2>
 
 <div class="product">
   <img src="images/razer-blackwidow-v4.jpg" alt="Razer BlackWidow V4 keyboard">
   <div class="product-content">
     <div class="tag">🏆 Best Overall Keyboard</div>
-    <h3>Razer BlackWidow V4 – Best Gaming Keyboard for RGB & Performance</h3>
+    <h3>Razer BlackWidow V4</h3>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-    <p>One of the <strong>best gaming keyboards in 2026</strong> with RGB lighting, fast switches, and premium build quality for competitive gaming.</p>
+    <p>Top-tier RGB, fast switches, and premium build quality.</p>
     <a class="btn" href="https://amzn.to/4bUVBbF" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
 <div class="product">
- <img src="images/apex-pro-tkl.jpg"> alt="SteelSeries Apex Pro TKL best gaming keyboard for FPS adjustable actuation">
+  <img src="images/apex-pro-tkl.jpg" alt="SteelSeries Apex Pro TKL keyboard">
   <div class="product-content">
-    <div class="tag">⚡ Best for Competitive Gaming</div>
-    <h3>SteelSeries Apex Pro TKL – Best Gaming Keyboard for FPS</h3>
+    <div class="tag">⚡ Competitive Gaming</div>
+    <h3>SteelSeries Apex Pro TKL</h3>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-    <p>The <strong>best gaming keyboard for FPS</strong> with adjustable actuation, giving you faster response times in competitive games.</p>
+    <p>Adjustable actuation for faster response.</p>
     <a class="btn" href="https://amzn.to/4uXH8En" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
 <!-- MICE -->
-
-<h2 class="category-title">🖱️ Best Gaming Mouse for FPS & Competitive Gaming</h2>
+<h2 class="category-title">🖱️ Best Gaming Mouse</h2>
 
 <div class="product">
- <img src="images/gpro-superlight.jpg"> alt="Logitech G Pro X Superlight best gaming mouse for FPS lightweight esports mouse">
+  <img src="images/gpro-superlight.jpg" alt="Logitech G Pro X Superlight mouse">
   <div class="product-content">
-    <div class="tag">🎯 Best for FPS</div>
-    <h3>Logitech G Pro X Superlight – Best Gaming Mouse for FPS</h3>
+    <div class="tag">🎯 Best FPS Mouse</div>
+    <h3>Logitech G Pro X Superlight</h3>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-    <p>One of the <strong>best gaming mice for FPS</strong> with ultra-lightweight design and pro-level tracking performance.</p>
+    <p>Ultra-lightweight with pro-level tracking.</p>
     <a class="btn" href="https://amzn.to/411xWRS" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
 <div class="product">
- <img src="images/deathadder-v3.jpg"> alt="Razer DeathAdder V3 Pro ergonomic gaming mouse lightweight performance">
+  <img src="images/deathadder-v3.jpg" alt="Razer DeathAdder V3 Pro mouse">
   <div class="product-content">
-    <div class="tag">🖐️ Best Ergonomic Mouse</div>
-    <h3>Razer DeathAdder V3 Pro – Best Ergonomic Gaming Mouse</h3>
+    <div class="tag">🖐️ Ergonomic</div>
+    <h3>Razer DeathAdder V3 Pro</h3>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-    <p>The <strong>best ergonomic gaming mouse</strong> for long sessions, combining comfort with high-end performance.</p>
+    <p>Comfort + performance for long sessions.</p>
     <a class="btn" href="https://amzn.to/4tlUau1" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
 <!-- HEADSETS -->
-
-<h2 class="category-title">🎧 Best Gaming Headsets for PC Gaming</h2>
+<h2 class="category-title">🎧 Best Gaming Headsets</h2>
 
 <div class="product">
- <img src="images/arctis-nova-pro.jpg"> alt="SteelSeries Arctis Nova Pro best gaming headset 2026 premium audio ANC">
+  <img src="images/arctis-nova-pro.jpg" alt="SteelSeries Arctis Nova Pro headset">
   <div class="product-content">
-    <div class="tag">🔊 Best Premium Audio</div>
-    <h3>SteelSeries Arctis Nova Pro – Best Premium Gaming Headset</h3>
+    <div class="tag">🔊 Premium Audio</div>
+    <h3>SteelSeries Arctis Nova Pro</h3>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-    <p>One of the <strong>best gaming headsets for PC</strong> with premium audio quality, ANC, and top-tier comfort.</p>
+    <p>High-end sound with top comfort.</p>
     <a class="btn" href="https://amzn.to/4v07hmc" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
 <div class="product">
- <img src="images/hyperx-cloud2.jpg"> alt="HyperX Cloud II best budget gaming headset surround sound value">
+  <img src="images/hyperx-cloud2.jpg" alt="HyperX Cloud II headset">
   <div class="product-content">
-    <div class="tag">💰 Best Budget Headset</div>
-    <h3>HyperX Cloud II – Best Budget Gaming Headset</h3>
+    <div class="tag">💰 Budget Pick</div>
+    <h3>HyperX Cloud II</h3>
     <div class="rating">⭐⭐⭐⭐☆</div>
-    <p>The <strong>best budget gaming headset</strong> offering great surround sound and value for money.</p>
+    <p>Great value with solid surround sound.</p>
     <a class="btn" href="https://amzn.to/3PvPu6f" target="_blank">Check Price</a>
-    <p style="color:#f87171; font-size:13px;">⚡ Limited stock – price may change anytime</p>
   </div>
 </div>
 
-<h2>🔥 Guides</h2>
+<!-- GUIDES -->
+<h2 class="category-title">🔥 Gaming Guides</h2>
 <ul>
-  <li><a href="valorant-mouse.html">Best Gaming Mouse for Valorant 2026</a></li>
+  <li><a href="valorant-mouse.html">Best Mouse for Valorant</a></li>
+  <li><a href="keyboard-fps.html">Best Keyboard for FPS</a></li>
 </ul>
 
 </body>
 </html>
-
-<h2>🔥 Gaming Guides</h2>
-
-<ul>
-  <li><a href="valorant-mouse.html">Best Mouse for Valorant</a></li>
-  <li><a href="keyboard-fps.html">Best Keyboard for FPS</a></li>
-  <li><a href="budget-mouse.html">Best Budget Gaming Mouse</a></li>
-  <li><a href="gaming-headset-pc.html">Best Gaming Headset for PC</a></li>
-</ul>
-
-<div class="container">
-
